@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 
 /**
  * CopyOnWriteArrayList,线程安全，当对CopyOnWriteArrayList进行写操作时，
- * 现将员阿里的数组拷贝一份，然后在新的数组里面进行写操作，写完之后再将原来的数组指向新的数组，
+ * 现将原来的数组拷贝一份，然后在新的数组里面进行写操作，写完之后再将原来的数组指向新的数组，
  * 读操作时不需要加锁，写操作时需要加锁；
  * CopyOnWriteArrayList有如下缺点：
  * 1.拷贝的时候会消耗内存，当元素个数太多时，可能会导致Minor GC或者Full GC

@@ -21,15 +21,12 @@ public class FutureExample {
     }
 
     public static void main(String[] args) throws Exception {
-        /*ExecutorService executorService = Executors.newCachedThreadPool();
+        ExecutorService executorService = Executors.newCachedThreadPool();
         Future<String> future = executorService.submit(new MyCallable());
         log.info("do something in main");
         Thread.sleep(1000);
         String result = future.get();
-        log.info("result：{}", result);*/
-        short a = 128;
-        byte b = (byte) a;
-        System.out.println(a);
-        System.out.println(b);
+        log.info("result：{}", result);
+
     }
 }
